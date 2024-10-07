@@ -1,10 +1,58 @@
-# Getting Started with Create React App
+# BDD CRA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+BigDevDog's create-react-app: because I'm tired of redoing the same things at the beginning of every react project I start.
 
-## Available Scripts
+This package can be used by anybody, but it is currently pointed toward me, as it uses my pixel face logo and says 'by b1gd3vd0g' in the title.
 
-In the project directory, you can run:
+This removes some unnecessary files from create-react-app, and modifies the remaining files to follow my coding preferences (arrow functions, lowercase file names, etc.).
+
+## How I use this repository
+
+I just use this repository indirectly by accessing a bash script I have saved on my computer.
+
+The bash script is right here:
+
+```
+#!usr/bin/bash
+
+# $1 is equal to the name of the new directory we are gonna create.
+# ($1 refers to the FIRST word following the 'bash bdd-cra' command.)
+
+# Clone the github repository with my starter code in it.
+# It will be put into a file on the system named $1.
+git clone https://github.com/b1gd3vd0g/bdd-cra.git $1 &&
+
+# Change into the newly made directory.
+cd ./$1 &&
+
+# Nobody needs my old git stuff
+rm -rf .git &&
+
+# Reinitialize a git repo
+git init &&
+
+# Add and commit everything that was just made.
+git add . &&
+git commit -m "Initial commit - React app created with bdd-cra" &&
+
+# Make sure all the dependencies are installed so that the app can
+# be run immediately.
+npm i &&
+
+# Let the user know how to start
+echo &&
+echo React app \'$1\' has been created successfully. &&
+echo Start the project by doing: &&
+echo cd $1 &&
+echo npm start &&
+echo
+```
+
+## Available scripts
+
+As this is simply a personalized version of create-react-app,
+the same scripts which are available there are available here. Below I have
+simply copied the README info from create-react-app.
 
 ### `npm start`
 
@@ -44,27 +92,3 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
