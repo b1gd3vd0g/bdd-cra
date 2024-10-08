@@ -32,12 +32,19 @@ cd ./$1 &&
 # Nobody needs my old git stuff
 rm -rf .git &&
 
-# Reinitialize a git repo
-git init &&
+# I am thinking that I ought not set git up at all for the user and let them do
+# it themselves. That way it causes no confusion when this script is used
+# to generate a react app within a larger git repository.
 
-# Add and commit everything that was just made.
-git add . &&
-git commit -m "Initial commit - React app created with bdd-cra" &&
+# That being said, an improvement could be added to make it so that the user can
+# choose to initialize a new git repo or not. (But by default, should not).
+
+# # Reinitialize a git repo
+# git init &&
+
+# # Add and commit everything that was just made.
+# git add . &&
+# git commit -m "Initial commit - React app created with bdd-cra" &&
 
 # Make sure all the dependencies are installed so that the app can
 # be run immediately.
@@ -58,17 +65,15 @@ Once this is in the folder I want it in, I simply say navigate to the directory 
 
 Then once I enter:
 
-`cd newAppName && npm start`
+`cd newApp && npm start`
 
 I can see the app running.
 
 ## Potential improvements
 
-There's gotta be a better way than downloading a bash script from the readme of
-my git repository in order to use my repository. Figure out something that is
-a little bit easier, like the `npx create-react-app`.
+- There's gotta be a better way than downloading a bash script from the readme of my git repository in order to use my repository. Figure out something that is a little bit easier, like the `npx create-react-app`.
 
-Maybe personalize it a _little_ bit less - as in, don't actually SAY b1gd3vd0g anywhere, but still use the logo.
+- Make it so that files such as "package.json" etc. are updated with the file names. Maybe it asks you prompts similar to when you say "npm init" without the -y flag.
 
 ## Available scripts
 
