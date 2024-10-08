@@ -1,6 +1,10 @@
 # BDD CRA
 
-**BigDevDog's create-react-app**: because I'm tired of redoing the same things at the beginning of every react project I start.
+**BigDevDog's create-react-app**:
+
+because I'm tired of redoing the same things at the beginning of every react project I start.
+
+## Overview
 
 This package can be used by anybody, but it is currently pointed toward me, as it uses my pixel face logo and says 'by b1gd3vd0g' in the title.
 
