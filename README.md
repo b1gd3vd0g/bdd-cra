@@ -1,6 +1,4 @@
-# BDD CRA
-
-**BigDevDog's create-react-app**:
+# BigDevDog's create-react-app:
 
 because I'm tired of redoing the same things at the beginning of every react project I start.
 
