@@ -1,6 +1,6 @@
 # BDD CRA
 
-BigDevDog's create-react-app: because I'm tired of redoing the same things at the beginning of every react project I start.
+**BigDevDog's create-react-app**: because I'm tired of redoing the same things at the beginning of every react project I start.
 
 This package can be used by anybody, but it is currently pointed toward me, as it uses my pixel face logo and says 'by b1gd3vd0g' in the title.
 
@@ -47,6 +47,26 @@ echo cd $1 &&
 echo npm start &&
 echo
 ```
+
+Once this is in the folder I want it in, I simply say navigate to the directory in which I want my new app to be located, and enter into the terminal:
+
+`bash /path/to/bdd-cra newApp`
+
+Then once I enter:
+
+`cd newAppName && npm start`
+
+I can see the app running.
+
+## Potential improvements
+
+I will always install react-router-dom and my App component is usually really just a BrowserRouter inside a div. I should add this to my default App to avoid having to do all that nonsense.
+
+There's gotta be a better way than downloading a bash script from the readme of
+my git repository in order to use my repository. Figure out something that is
+a little bit easier, like the `npx create-react-app`.
+
+Maybe personalize it a _little_ bit less - as in, don't actually SAY b1gd3vd0g anywhere, but still use the logo.
 
 ## Available scripts
 
