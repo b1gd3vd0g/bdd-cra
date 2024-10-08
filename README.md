@@ -64,8 +64,6 @@ I can see the app running.
 
 ## Potential improvements
 
-I will always install react-router-dom and my App component is usually really just a BrowserRouter inside a div. I should add this to my default App to avoid having to do all that nonsense.
-
 There's gotta be a better way than downloading a bash script from the readme of
 my git repository in order to use my repository. Figure out something that is
 a little bit easier, like the `npx create-react-app`.
