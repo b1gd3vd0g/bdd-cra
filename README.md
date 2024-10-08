@@ -39,12 +39,16 @@ rm -rf .git &&
 # That being said, an improvement could be added to make it so that the user can
 # choose to initialize a new git repo or not. (But by default, should not).
 
+##########
+
 # # Reinitialize a git repo
 # git init &&
 
 # # Add and commit everything that was just made.
 # git add . &&
 # git commit -m "Initial commit - React app created with bdd-cra" &&
+
+##########
 
 # Make sure all the dependencies are installed so that the app can
 # be run immediately.
