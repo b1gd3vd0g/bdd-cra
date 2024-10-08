@@ -77,7 +77,7 @@ I can see the app running.
 
 - There's gotta be a better way than downloading a bash script from the readme of my git repository in order to use my repository. Figure out something that is a little bit easier, like the `npx create-react-app`.
 
-- Make it so that files such as "package.json" etc. are updated with the file names. Maybe it asks you prompts similar to when you say "npm init" without the -y flag.
+- Make it so that files such as "package.json" etc. are updated with the file names. Maybe it asks you prompts similar to when you say `npm init` without the `-y` flag.
 
 ## Available scripts
 
